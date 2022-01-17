@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for a fool in doubt" href="/feed.xml" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+    <title>{{ page.title }}</title>
+</head>
+
+<body>
+
+    {% if page.url != '/' %}
+    <small><a href="/">Home</a></small>
+    {% endif %}
+
+    <h1>{{ page.title }}</h1>
+
+    {% if page.url != '/' %}
+    <p><small><i>{{ page.date | date_to_string }}</i></small></p>
+    {% endif %}
+
+    {{ content }}
+
+    {% if page.url != '/' %}
+
+    {% if page.previous != nil %}
+    <p><small>Previous: <a href="{{ page.previous.url }}">{{ page.previous.title }}</a></small></p>
+    {% endif %}
+
+    {% if page.next != nil %}
+    <p><small>Next: <a href="{{ page.next.url }}">{{ page.next.title }}</a></small></p>
+    {% endif %}
+
+    {% endif %}
+
+
+    <hr />
+    <p><small><a href="/feed.xml">rss</a></small></p>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8SEK29JJ9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-Y8SEK29JJ9');
+    </script>
+
+</body>
+
+</html>
