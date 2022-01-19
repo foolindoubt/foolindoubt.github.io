@@ -1,2 +1,7 @@
+author:
+  twitter: foolindoubt
+
+title: a fool in doubt
+
 plugins:
   - jekyll-feed
