@@ -15,26 +15,19 @@
 <body>
 
     <h1>a fool in doubt    </h1>
+    <p><small><a href="/">home</a></small></p>
     <p>
-        <a href="https://twitter.com/foolindoubt?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large"
-            data-dnt="true" data-show-count="false">Follow @foolindoubt</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <small>
+            <a href="https://twitter.com/foolindoubt?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large"
+                data-dnt="true" data-show-count="false">follow on twitter</a>
+        </small>
     </p>
     <hr>
-
-    <small><a href="/">Home</a></small>
 
     <h2>{{ page.title }}</h2>
 
     <p><small><i>{{ page.date | date_to_string }}</i></small></p>
 
-    <p>
-        <a href="https://twitter.com/intent/tweet?screen_name=foolindoubt&ref_src=twsrc%5Etfw"
-            class="twitter-mention-button" data-related="foolindoubt" data-show-screen-name="false" data-dnt="true"
-            data-show-count="false">Tweet to @foolindoubt</a>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </p>
-        
     {{ content }}
 
     {% if page.previous != nil %}
@@ -46,6 +39,13 @@
     {% endif %}
 
     <hr />
+    <p>
+        <small>
+            <a href="https://twitter.com/intent/tweet?screen_name=foolindoubt&ref_src=twsrc%5Etfw"
+                class="twitter-mention-button" data-related="foolindoubt" data-show-screen-name="false" data-dnt="true"
+                data-show-count="false">mention on twitter</a>
+        </small>
+    </p>
     <p><small><a href="/feed.xml">feed</a></small></p>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8SEK29JJ9"></script>
